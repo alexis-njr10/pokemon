@@ -1,5 +1,5 @@
 import { HttpService } from "../../services/http.service";
-import { IPokemon, IPokemonDetails, PokemonType } from "../models/pokemon.model";
+import { IPokemon, IPokemonDetails } from "../models/pokemon.model";
 
 class PokemonService {
     
