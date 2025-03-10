@@ -31,5 +31,8 @@ export const usePokemonStore = defineStore({
                 this.favorites.splice(index, 1);
             }
         }
-    }
+    },
+    persist: {
+        storage: sessionStorage,
+    },
 });

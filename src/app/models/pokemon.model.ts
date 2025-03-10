@@ -10,3 +10,4 @@ export interface IPokemonDetails {
     height: number;
     types: string[];
 }
+

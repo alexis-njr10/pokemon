@@ -1,5 +1,5 @@
 import { HttpService } from "../../services/http.service";
-import { IPokemon, IPokemonDetails } from "../models/pokemon.model";
+import { IPokemon, IPokemonDetails, PokemonType } from "../models/pokemon.model";
 
 class PokemonService {
     
@@ -15,7 +15,7 @@ class PokemonService {
                 name: data.name,
                 weight: data.weight,
                 height: data.height,
-                types: data.types.map(t => t.type.name),
+                types: data.types.map((t: any) => t.type.name),
             }));
     }
 }

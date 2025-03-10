@@ -43,6 +43,7 @@
 <script setup>
 import { computed, watch } from 'vue';
 import { usePokemonStore } from '@/app/store/pokemon.store';
+import { notificacionService } from '../../services/notification.service';
 
 const props = defineProps({
     pokemon: Object,
@@ -69,9 +70,9 @@ const sharePokemon = async () => {
 
     try {
         await navigator.clipboard.writeText(textToCopy);
-        alert('Pokemon data copied to clipboard!');
+        notificacionService.Notify({type: 'success', text: 'Pokemon data copied to clipboard!'});
     } catch (err) {
-        console.error('Failed to copy!', err);
+        notificacionService.Notify({type: 'error', text: 'Failed to copy!'});
     }
 };
 
