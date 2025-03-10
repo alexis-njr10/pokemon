@@ -1,0 +1,46 @@
+/* Consultar reglas en: https://eslint.org/docs/latest/rules/ */
+module.exports = {
+	env: {
+		browser: true,
+		es2021: true,
+	},
+	extends: [
+		'standard',
+		'eslint:recommended',
+		'plugin:vue/vue3-recommended',
+		'standard-with-typescript',
+		'eslint-config-prettier',
+	],
+	overrides: [],
+	parserOptions: {
+		sourceType: 'module',
+		ecmaVersion: 'latest',
+		parser: '@typescript-eslint/parser',
+		project: ['./tsconfig.json',],
+		extraFileExtensions: [".vue"]
+	},
+	plugins: ['vue'],
+	rules: {
+		'semi': ['error', 'always'],
+		'@typescript-eslint/no-unused-vars': 'off',
+		'@typescript-eslint/triple-slash-reference': 'off',
+		'@typescript-eslint/explicit-function-return-type': 'off',
+		'@typescript-eslint/strict-boolean-expressions': 'off',
+		'no-unused-vars': 'off',
+		'dot-notation': ['warn', { "allowKeywords": false }],
+		'comma-dangle': ['warn', { objects: 'always-multiline', arrays: 'always-multiline', imports: 'always-multiline', }],
+		'eqeqeq': ['warn', 'always'],
+		'no-await-in-loop': 'error',
+		'no-template-curly-in-string': 'warn',
+		'no-trailing-spaces': 'error',
+		'curly': ['error', 'multi-line', 'consistent'],
+		'grouped-accessor-pairs': ['warn', "getBeforeSet"],
+		'max-params': ['warn', 3],
+		'indent': ['warn', 'tab'],
+		'prefer-const': 'warn',
+		'require-await': 'off',
+		'quotes': ['warn', "single"],
+		'vue/multi-word-component-names': ['off', { 'ignores': [] }],
+		'camelcase': 'error',
+	},
+}

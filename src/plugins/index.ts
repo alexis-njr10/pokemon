@@ -1,0 +1,9 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import './router';
+import './lodash';
+import './primevue';
+import './vue-draggable';
+import './vue-quill';
+import './axios';
+import './loading';

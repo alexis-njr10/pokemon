@@ -1,0 +1,47 @@
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .pikachu-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 60px;
+  }
+  
+  .text-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--text-main);
+  }
+  
+  .text-description {
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 30px auto 80px;
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+  
+  .stard-btn {
+    background-color: var(--primary);
+    color: var(--background-bright);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: var(--secondary);
+    }
+  }
